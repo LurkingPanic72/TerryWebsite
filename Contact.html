@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="Contact.css">
+        <!-- Created by Dylan Schopmann -->
+    </head>
+
+    <body>
+
+        <div class="header">
+            <img src="TerryLogo.png" alt="logo">
+            <h1>Terry's</h1>
+        </div>
+    
+        <div class="navbar" id="myNavbar">
+          <a href="index.html">Home</a>
+          <a href="About Terry.html">About Terry</a>
+          <a href="Terry Shop.html">Terry's Shop</a>
+          <a href="tellTerry.html">Tell Terry About You</a>
+          <a href="Contact.html" class="active">Contact</a>
+        </div>            
+        
+        <div class="container">
+            <div style="text-align:center">
+              <h2>Contact Us</h2>
+              <p>Let Terry know what you think</p>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="TrailerTerry.JPG" style="width:750px">
+              </div>
+              <div class="column">
+                <form>
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="europe">Europe</option>
+                    <option value="asia">Asia</option>
+                    <option value="southamerica">South America</option>
+                    <option value="africa">Africa</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div> 
+    </body>
+</html>

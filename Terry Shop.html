@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="TerryShop.css">
+        <title>
+            Shop
+        </title>
+      <!-- Created by Wolf Helm -->
+  </head>
+
+    <body>
+        <div class="header">
+          <img src="TerryLogo.png" alt="logo">
+          <h1>Terry's</h1>
+        </div>
+            <div class="navbar" id="myNavbar">
+                <a href="index.html">Home</a>
+                <a href="About Terry.html">About Terry</a>
+                <a href="Terry Shop.html" class="active">Terry's Shop</a>
+                <a href="tellTerry.html">Tell Terry About You</a>
+                <a class="Right" href="Contact.html">Contact</a>
+            </div>
+
+            <!--Creating product class types for css styling and table look -->
+            <div class="column-labels">
+              <label class="product-image">Image</label>
+              <label class="product-details">Product</label>
+              <label class="product-price">Price</label>
+              <label class="product-quantity">Quantity</label>
+              <label class="product-removal">Remove</label>
+              <label class="product-line-price">Total</label>
+            </div>
+
+            <!--Creation of Products-->
+              <div class="product">
+                <div class="product-image">
+                  <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fnotebooks.com%2Fwp-content%2Fuploads%2F2013%2F10%2Fshutterstock_133277192.jpg&f=1&nofb=1&ipt=ef4a5a9765d927aad21e572261928868dfa5ef04b891e3a7e627871f3824a117&ipo=images" alt="Terry's Ram">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Terry's Ultra Zoomy RAM</div>
+                  <p class="product-description">Terry's Ultra Zoomy RAM is sure to impress all your friends and family!</p>
+                </div>
+                <div class="product-price">37.24</div>
+                <div class="product-quantity">
+                  <input type="number" value="0" min="0" id="TUZR" name="TUZR">
+                </div>
+                <div class="product-removal">
+                  <button class="remove-product" onclick="RemoveTUZR()" id="RemoveTUZR">
+                    Remove
+                  </button>
+                </div>
+                <div class="product-line-price" id="TUZRP" name="TUZRP">0.00</div>
+              </div>
+            
+              <div class="product">
+                <div class="product-image">
+                  <img src="TerryCoin.jpg" alt="Terry Coin image">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Terry Coin</div>
+                  <p class="product-description">Terry Coin is the currency of the future, it estimated that in 10 years Terry Coin will be worth over x10,000 what it is currently valued!</p>
+                </div>
+                <div class="product-price">4.20</div>
+                <div class="product-quantity">
+                  <input type="number" value="0" min="0" id="TC" name="TC">
+                </div>
+                <div class="product-removal">
+                  <button class="remove-product" onclick="RemoveTC()" id="RemoveTC">
+                    Remove
+                  </button>
+                </div>
+                <div class="product-line-price" id="TCP" name="TCP">0.00</div>
+              </div>
+
+              <div class="product">
+                <div class="product-image">
+                  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kimballstock.com%2Fpix%2FCHI%2F03%2FCHI_03_RK0041_01_P.JPG&f=1&nofb=1&ipt=25ede3bde47206b4abffaa1b9f05c5f84daa4b6e6d3b75d8ff6324f17fe2ecbd&ipo=images" alt="Terry Birthday Suprise">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Terry's Birthday Party Suprise</div>
+                  <p class="product-description">Have Terry stop by your house for a birthday party suprise! Terry can do many cool things like:
+                    <ul>
+                      <li>Juggle</li>
+                      <li>Dance</li>
+                      <li>Meet you behind 7/11 at 8:00am</li>
+                      <li>Magic Preformance</li>
+                      <li>Handstand</li>
+                      <li>Gamble</li>
+                    </ul>
+                  </p>
+                </div>
+                <div class="product-price">200.00</div>
+                <div class="product-quantity">
+                  <input type="number" value="0" min="0" id="TBPS" name="TBPS">
+                </div>
+                <div class="product-removal">
+                  <button class="remove-product" id="RemoveTBPS" onclick="RemoveTBPS()">
+                    Remove
+                  </button>
+                </div>
+                <div class="product-line-price" id="TBPSP" name="TBPSP">0.00</div>
+              </div>
+
+              <div class="product">
+                <div class="product-image">
+                  <img src="book (2).jpg">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Terry Guide to Talking to Children</div>
+                  <p class="product-description">If you struggle with talking to children then this book is for you!</p>
+                </div>
+                <div class="product-price">50.99</div>
+                <div class="product-quantity">
+                  <input type="number" value="0" min="0" id="TG" name="TG">
+                </div>
+                <div class="product-removal">
+                  <button class="remove-product" onclick="RemoveTG()" id="RemoveTG">
+                    Remove
+                  </button>
+                </div>
+                <div class="product-line-price" id="TGP" name="TGP">0.00</div>
+              </div>
+              
+              <div class="product">
+                <div class="product-image">
+                  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FMItB-0hvOA0%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=11a3fcb53851aab0dbda1953ed0772ea8cfeb2146ab6c42c40a334ef748f8241&ipo=images">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Terry's World</div>
+                  <p class="product-description">Terry's World is an open world RPG where you can play as Terry himself!</p>
+                </div>
+                <div class="product-price">59.99</div>
+                <div class="product-quantity">
+                  <input type="number" value="0" min="0" id="TW" name="TW">
+                </div>
+                <div class="product-removal">
+                  <button class="remove-product" onclick="RemoveTW()" id="RemoveTW">
+                    Remove
+                  </button>
+                </div>
+                <div class="product-line-price" id="TWP" name="TWP">0.00</div>
+              </div>
+
+              <div class="product">
+                <div class="product-image">
+                  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fphotos%2Fsugar-in-bag-isolated-on-white-picture-id539974774%3Fk%3D6%26m%3D539974774%26s%3D612x612%26w%3D0%26h%3DW4EM9F_e-CBKb5N51VNqfC6B-fEzGu7TOAMsU9x1Ofs%3D&f=1&nofb=1&ipt=6f1a6a18e484134e98c66d154a1588e8b0392ed75dd7f04dc4b63c5273919af4&ipo=images">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Terry's Ultra Pure Powdered Sugar</div>
+                  <p class="product-description">Terry's Ultra Pure Powered Sugar is the best you can get on the market, meet terry behind your local Walmart to pick yours up!
+                    *no popo allowed*
+                  </p>
+                </div>
+                <div class="product-price">3000.00</div>
+                <div class="product-quantity">
+                  <input type="number" value="0" min="0" id="TPS" name="TPS">
+                </div>
+                <div class="product-removal">
+                  <button class="remove-product" onclick="RemoveTPS()" id="RemoveTPS">
+                    Remove
+                  </button>
+                </div>
+                <div class="product-line-price" id="TPSP" name="TPSP">0.00</div>
+              </div>
+
+              <!--Subtotal/tax/shipping/total display-->
+              <div class="totals">
+                <div class="totals-item">
+                  <label>Subtotal</label>
+                  <div class="totals-value" id="cart-subtotal">0.00</div>
+                </div>
+                <div class="totals-item">
+                  <label>Tax (5%)</label>
+                  <div class="totals-value" id="cart-tax">0.00</div>
+                </div>
+                <div class="totals-item">
+                  <label>Shipping</label>
+                  <div class="totals-value" id="cart-shipping">0.00</div>
+                </div>
+                <div class="totals-item totals-item-total">
+                  <label>Grand Total</label>
+                  <div class="totals-value" id="cart-total">0.00</div>
+                </div>
+              </div>
+              <form action="Credit Card.html">
+                <button class="checkout">Checkout</button>
+              </form>
+            
+            </div>
+    </body>
+
+<!--Javascript for real time price updating-->
+  <script type="text/javascript">
+
+    var taxRate = 0.05;
+    var shippingRate = 15.00; 
+    var fadeTime = 300;
+
+    /*Event watchers for item quantity change*/
+    var TerryCoinCheck = document.getElementById("TC");
+    TerryCoinCheck.addEventListener("change", updateQuantityTerryCoin);
+    var TerryRamCheck = document.getElementById("TUZR");
+    TerryRamCheck.addEventListener("change", updateQuantityTerryRam);
+    var TerryBirthdayCheck = document.getElementById("TBPS");
+    TerryBirthdayCheck.addEventListener("change", updateQuantityTerryBirthday);
+    var TerryGuideCheck = document.getElementById("TG");
+    TerryGuideCheck.addEventListener("change", updateQuantityTerryGuide);
+    var TerryWorldCheck = document.getElementById("TW");
+    TerryWorldCheck.addEventListener("change", updateQuantityTerryWorld);
+    var TerryPowderCheck = document.getElementById("TPS");
+    TerryPowderCheck.addEventListener("change", updateQuantityTerryPowder);
+
+      /*update subtotal, tax, shipping and Total*/
+      function updateTotal(){
+      var SubTotal = ((3000.00 * document.getElementById("TPS").value) + (59.99 * document.getElementById("TW").value) + (50.99 * document.getElementById("TG").value) + (200.00 * document.getElementById("TBPS").value) + (4.20 * document.getElementById("TC").value) + (37.24 * document.getElementById("TUZR").value)).toFixed(2);
+      document.getElementById("cart-subtotal").innerHTML = SubTotal
+      
+      var Tax = (taxRate * SubTotal).toFixed(2);
+      document.getElementById("cart-tax").innerHTML = Tax;
+
+      if(SubTotal > 0){
+        shippingRate = 15.00
+        document.getElementById("cart-shipping").innerHTML = shippingRate;
+      }
+      else{
+        shippingRate = 0.00
+        document.getElementById("cart-shipping").innerHTML = shippingRate;
+      }
+
+      var Total = ((3000.00 * document.getElementById("TPS").value) + (59.99 * document.getElementById("TW").value) + (50.99 * document.getElementById("TG").value) + (200.00 * document.getElementById("TBPS").value) + (4.20 * document.getElementById("TC").value) + (37.24 * document.getElementById("TUZR").value) + (taxRate * SubTotal) + shippingRate).toFixed(2);
+      document.getElementById("cart-total").innerHTML = Total;
+
+    }
+    /* upon quantity change, update price display for each item and call updateTotal*/
+    function updateQuantityTerryCoin() {
+
+        var TerryCoin = document.getElementById("TC").value;
+        var linePriceTC = (4.20 * TerryCoin).toFixed(2);
+  
+  /* Update line price display and recalc cart totals */
+        document.getElementById("TCP").innerHTML = linePriceTC;
+        updateTotal();
+    }
+
+
+    function updateQuantityTerryRam() {
+
+      var TerryRam = document.getElementById("TUZR").value;
+      var linePriceTR = (37.24 * TerryRam).toFixed(2);
+
+      document.getElementById("TUZRP").innerHTML = linePriceTR;
+      updateTotal()
+    }
+
+
+    function updateQuantityTerryBirthday() {
+
+    var TerryBirthday = document.getElementById("TBPS").value;
+    var linePrice = (200.00 * TerryBirthday).toFixed(2);
+
+    document.getElementById("TBPSP").innerHTML = linePrice;
+    updateTotal()
+    }
+
+
+    function updateQuantityTerryGuide() {
+
+    var TerryGuide = document.getElementById("TG").value;
+    var linePrice = (50.99 * TerryGuide).toFixed(2);
+
+    /* Update line price display and recalc cart totals */
+    document.getElementById("TGP").innerHTML = linePrice;
+    updateTotal();
+    }
+
+
+    function updateQuantityTerryWorld() {
+
+    var TerryWorld = document.getElementById("TW").value;
+    var linePrice = (50.99 * TerryWorld).toFixed(2);
+
+    /* Update line price display and recalc cart totals */
+    document.getElementById("TWP").innerHTML = linePrice;
+    updateTotal();
+    }
+
+
+    function updateQuantityTerryPowder() {
+
+    var TerryPowder = document.getElementById("TPS").value;
+    var linePrice = (3000.00 * TerryPowder).toFixed(2);
+
+    /* Update line price display and recalc cart totals */
+    document.getElementById("TPSP").innerHTML = linePrice;
+    updateTotal();
+    }
+
+
+    /*Remove buttons for each item*/
+    function RemoveTUZR(){
+      document.getElementById("TUZR").value = 0;
+      updateQuantityTerryRam()
+      updateTotal()
+    }
+    function RemoveTC(){
+      document.getElementById("TC").value = 0;
+      updateQuantityTerryCoin()
+      updateTotal()
+    }
+    function RemoveTBPS(){
+      document.getElementById("TBPS").value = 0;
+      updateQuantityTerryBirthday()
+      updateTotal()
+    }
+    function RemoveTG(){
+      document.getElementById("TG").value = 0;
+      updateQuantityTerryGuide()
+      updateTotal()
+    }
+    function RemoveTW(){
+      document.getElementById("TW").value = 0;
+      updateQuantityTerryWorld()
+      updateTotal()
+    }
+    function RemoveTPS(){
+      document.getElementById("TPS").value = 0;
+      updateQuantityTerryPowder()
+      updateTotal()
+    }
+
+  </script>
+</html>
+

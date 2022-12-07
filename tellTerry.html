@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Tell Terry About You</title>
+    <link rel="stylesheet" href="AboutYou.css">
+    <script src="./infoSearch.js"defer></script>
+    <!-- Created by Scott Fitz Gerald -->
+</head>
+
+
+<body>
+
+    <div class="header">
+        <img src="TerryLogo.png" alt="logo">
+        <h1>Terry's</h1>
+    </div>
+
+    <div class="navbar" id="myNavbar">
+      <a href="index.html">Home</a>
+      <a href="About Terry.html">About Terry</a>
+      <a href="Terry Shop.html">Terry's Shop</a>
+      <a href="tellTerry.html" class="active">Tell Terry About You</a>
+      <a class="Right" href="Contact.html">Contact</a>
+    </div>
+    
+        <form id="tellTerry" method="POST">
+            <div class="content">
+            <div class="subheader">
+                <h2>Tell Terry About You</h2>
+            </div>
+            <p>
+                <label for="first">First Name:</label>
+                <input type="text" name="first" id="first">
+            </p>
+            <p>
+                <label for="last">Last Name:</label>
+                <input type="text" name="last" id="last">
+            </p>
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="text" name="phone" id="phone">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+            </p>
+            <p>
+                <label for="address">Physical Address:</label>
+                <input type="text" name="address" id="address">
+            </p>
+            <p>
+                <label for="social">Social Security Number:</label>
+                <input type="text" name="social" id="social">
+            </p>
+            <input type="submit" onClick="event.preventDefault(); popupChoose()">
+        </form>
+    <p id="response"></p>
+    </div>
+</body>
